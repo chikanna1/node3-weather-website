@@ -20,7 +20,9 @@ const forecast = (latitude, longtitude, callback) => {
         body.current.precip +
         " chance of rain and the weather feels like " +
         body.current.feelslike +
-        " degrees out";
+        " degrees out." +
+        "The Humidity is " +
+        body.current.humidity;
       callback(undefined, forecast_response);
     }
   });
